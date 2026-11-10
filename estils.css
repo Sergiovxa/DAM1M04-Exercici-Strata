@@ -1,3 +1,12 @@
+/*BASE*/
+:root {
+    --bg: #fbfbfa;
+    --ink: #15151c;
+    --line: #e3e3de;
+    --dark: #0a0c11;
+    --grad: linear-gradient(90deg, #3aa876, #1b9bec 55%, #a43fe8);
+}
+
 /*FOOTER*/
 .footer {
     background: var(--dark);
