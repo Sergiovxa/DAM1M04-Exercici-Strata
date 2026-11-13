@@ -460,36 +460,6 @@ a:focus-visible {
     font-size: 14px; letter-spacing: 0; color: #fff;
 }
 
-/*FOOTER*/
-.footer {
-    background: var(--dark);
-    color: #a8a9b3;
-    padding: 24px 0;
-}
-.foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-.footer img {
-    filter: brightness(0) invert(1);
-}
-.foot-nav {
-    display: flex;
-    gap: 32px;
-    font-size: 13px;
-}
-.footer img {
-    filter: brightness(0) invert(1);
-}
-.foot-nav {
-    display: flex; gap: 32px; font-size: 13px;
-}
-.foot-nav a:hover {
-    color: #fff; opacity: 1;
-}
-
 /* ===== Móvil ===== */
 @media (max-width: 767px) {
 .container {
