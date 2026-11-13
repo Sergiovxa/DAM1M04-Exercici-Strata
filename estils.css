@@ -324,6 +324,143 @@ a:focus-visible {
 }
 .t-c { border-color: #a43fe8;
 }
+
+/* ===== Hero ===== */
+.hero {
+    position: relative; isolation: isolate; overflow: hidden; padding: 72px 0 0;
+    background: radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%), radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%), #fbfbfa; 
+}
+.hero-graph {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none; -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%); mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+.hero-graph canvas {
+    display: block; background: transparent; pointer-events: none;
+}
+.hero > .container {
+    position: relative; z-index: 1;
+}
+.hero-icon {
+    margin-bottom: 28px;
+}
+.hero .lead {
+    margin-top: 24px;
+}
+.shot {
+    width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: 0 24px 60px rgba(20,20,40,.1);
+}
+.hero .shot {
+    margin-top: 56px; border-bottom: 0; border-radius: 12px 12px 0 0;
+}
+  
+/* ===== Tarjetas ===== */
+.cards {
+    display: flex; gap: 20px;
+}
+.card {
+    flex: 1; padding: 28px; border: 1px solid var(--line); border-radius: 12px; background: #fff; font-size: 14px; color: #4a4a55;
+}
+.card h3 {
+    color: var(--ink);
+}
+.tint-a {
+    background: linear-gradient(160deg, #eef6f1, #fff 70%);
+}
+.tint-b {
+    background: linear-gradient(160deg, #e9f3fc, #fff 70%);
+}
+.tint-c {
+    background: linear-gradient(160deg, #f3ecfb, #fff 70%);
+}
+.cards.three {
+    margin: 40px 0 20px;
+}
+.core {
+    display: flex; gap: 40px; align-items: center;
+}
+.core h3 {
+    flex: 0 0 200px; margin: 0;
+}
+
+/* ===== Franja mensaje ===== */
+.message {
+    padding: 96px 0; text-align: center; font-size: 20px;
+    background: radial-gradient(ellipse at 15% 100%, #d9ecf7, transparent 55%), radial-gradient(ellipse at 90% 0%, #e7ddf3, transparent 55%), radial-gradient(ellipse at 50% 100%, #dfeedd, transparent 60%), #f4f4f1;
+}
+.message .big {
+    font-size: 24px; margin-top: 24px; color: #3b3b46;
+}
+
+/* ===== Operational value ===== */
+.panel {
+    margin-top: 32px; border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: 0 16px 40px rgba(20,20,40,.06);
+}
+.panel-top {
+    display: flex; justify-content: space-between; gap: 16px; padding: 18px 28px; border-bottom: 1px solid var(--line); color: var(--muted);
+}
+.metrics {
+    display: flex;
+}
+.metric {
+    flex: 1; padding: 32px 28px;
+}
+.metric + .metric {
+    border-left: 1px solid var(--line);
+}
+.metric .etiqueta {
+    color: var(--muted);
+}
+.num {
+    font-size: 56px; font-weight: 400; letter-spacing: -0.03em; margin: 12px 0; line-height: 1;
+}
+.num small {
+    font-size: 24px; color: var(--muted); margin-left: 4px;
+}
+.small {
+    font-size: 13px; color: var(--muted);
+}
+.tag {
+    display: inline-block; padding: 2px 8px; border-radius: 999px; background: #e3f4ea; color: #1f7a4d; font-size: 10px; margin-left: 6px;
+}
+
+/* ===== From the field ===== */
+.dark {
+    background: radial-gradient(ellipse at 20% 100%, rgba(60,150,120,.18), transparent 50%), var(--dark); color: #fff; padding: 96px 0;
+}
+.dark .kicker, .dark .muted {
+    color: #8b8d98;
+}
+.field {
+    display: flex; gap: 64px; align-items: flex-start;
+}
+.field-main {
+    flex: 1.4;
+}
+.huge {
+    font-size: 96px; font-weight: 400; letter-spacing: -0.04em; line-height: 1; margin: 8px 0 12px;
+}
+.field-text {
+    margin-top: 32px; color: #c9cad2; font-size: 15px;
+}
+.field-note {
+    margin-top: 24px; color: #8b8d98; font-size: 12px;
+}
+.datasheet {
+    flex: 1; margin-top: 48px; border: 1px solid #262833; border-top: 2px solid #3aa876; border-radius: 8px; background: rgba(255,255,255,.03);
+}
+.datasheet .head {
+    padding: 16px 24px; color: #8b8d98; border-bottom: 1px solid #262833;
+}
+.datasheet .row {
+    display: flex; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #262833; font-size: 14px; color: #c9cad2;
+}
+.datasheet .row:last-child {
+    border-bottom: 0;
+}
+.datasheet dd {
+    font-size: 14px; letter-spacing: 0; color: #fff;
+}
+
+/*FOOTER*/
 .footer {
     background: var(--dark);
     color: #a8a9b3;
@@ -342,6 +479,107 @@ a:focus-visible {
     display: flex;
     gap: 32px;
     font-size: 13px;
+}
+.footer img {
+    filter: brightness(0) invert(1);
+}
+.foot-nav {
+    display: flex; gap: 32px; font-size: 13px;
+}
+.foot-nav a:hover {
+    color: #fff; opacity: 1;
+}
+
+/* ===== Móvil ===== */
+@media (max-width: 767px) {
+.container {
+      padding: 0 20px;
+}
+.section, .dark, .message {
+      padding: 64px 0;
+}
+h1 {
+      font-size: 40px;
+}
+h2, h2.xl {
+      font-size: 32px;
+}
+.pill, .nav {
+      display: none;
+}
+.hero {
+      padding-top: 48px;
+}
+.hero .shot {
+      margin-top: 36px;
+}
+.cards, .metrics, .field, .steps, .run, .trust, .foot {
+      flex-direction: column;
+}
+.core {
+      align-items: flex-start; gap: 8px;
+}
+.core h3 {
+      flex: none;
+}
+.panel-top {
+      flex-direction: column; gap: 4px; padding: 16px 20px;
+}
+.metric + .metric {
+      border-left: 0; border-top: 1px solid var(--line);
+}
+.num {
+      font-size: 44px;
+}
+.huge {
+      font-size: 64px;
+}
+.field {
+      gap: 8px;
+}
+.datasheet {
+      align-self: stretch; margin-top: 32px;
+}
+.wf a {
+      flex-direction: column; gap: 12px; padding: 24px 12px; position: relative;
+}
+.arrow {
+      position: absolute; right: 12px; top: 24px;
+}
+.chip {
+      flex: none;
+}
+.cards.two .card {
+      max-width: none; flex: 1;
+}
+.steps {
+      gap: 20px;
+}
+.run {
+      gap: 16px;
+}
+.trust {
+      gap: 24px; margin-top: 56px;
+}
+.start {
+      padding-top: 72px;
+}
+.foot {
+      align-items: flex-start;
+}
+.foot-nav {
+      flex-wrap: wrap; gap: 12px 24px;
+}
+.hero-graph {
+      display: none !important;
+}
+}
+@media (prefers-reduced-motion: reduce) {
+html {
+      scroll-behavior: auto;
+}
+.hero-graph {
+      display: none !important;
 }
 .foot-nav a:hover {
     color: #fff;
