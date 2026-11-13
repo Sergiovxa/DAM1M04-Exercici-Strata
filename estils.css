@@ -35,6 +35,34 @@ ul, ol {
     
 }
 }
+
+/* ===== Hero ===== */
+.hero {
+    position: relative; isolation: isolate; overflow: hidden; padding: 72px 0 0;
+    background: radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%), radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%), #fbfbfa; 
+  }
+  .hero-graph {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none; -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%); mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+  }
+  .hero-graph canvas {
+    display: block; background: transparent; pointer-events: none;
+  }
+  .hero > .container {
+    position: relative; z-index: 1;
+  }
+  .hero-icon {
+    margin-bottom: 28px;
+  }
+  .hero .lead {
+    margin-top: 24px;
+  }
+  .shot {
+    width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: 0 24px 60px rgba(20,20,40,.1);
+  }
+  .hero .shot {
+    margin-top: 56px; border-bottom: 0; border-radius: 12px 12px 0 0;
+  }
+  
 /*FOOTER*/
 .footer {
     background: var(--dark);
