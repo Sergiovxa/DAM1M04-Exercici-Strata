@@ -324,6 +324,29 @@ a:focus-visible {
 }
 .t-c { border-color: #a43fe8;
 }
+.footer {
+    background: var(--dark);
+    color: #a8a9b3;
+    padding: 24px 0;
+}
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.footer img {
+    filter: invert(1);
+}
+.foot-nav {
+    display: flex; 
+    gap: 32px; 
+    font-size: 13px; 
+}
+.foot-nav a:hover {
+    color: #fff; 
+    opacity: 1;
+}
 
 /* ===== Hero ===== */
 .hero {
@@ -421,7 +444,47 @@ a:focus-visible {
 .tag {
     display: inline-block; padding: 2px 8px; border-radius: 999px; background: #e3f4ea; color: #1f7a4d; font-size: 10px; margin-left: 6px;
 }
-
+/*Workflows*/
+.wf {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--line);
+}
+.wf li {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--line);
+}
+.wf a { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 32px; 
+    padding: 28px 16px; }
+.wf a:hover {
+    background: #f1f1ee;
+    opacity: 1;
+}
+.wf a:focus-visible {
+    outline-offset: -2px;
+}
+.wf .sub a {
+    background: #f1f1ee; }
+.chip { 
+    flex: 0 0 170px;
+    color: var(--muted); 
+}
+.wf-body { 
+    flex: 1; 
+    max-width: 640px; 
+}
+.wf-body p {
+    font-size: 14px;
+    color: #4a4a55;
+}
+.arrow { margin-left: auto;
+    color: var(--muted);
+    font-size: 20px;
+}
 /* ===== From the field ===== */
 .dark {
     background: radial-gradient(ellipse at 20% 100%, rgba(60,150,120,.18), transparent 50%), var(--dark); color: #fff; padding: 96px 0;
@@ -458,29 +521,6 @@ a:focus-visible {
 }
 .datasheet dd {
     font-size: 14px; letter-spacing: 0; color: #fff;
-}
-.footer {
-    background: var(--dark);
-    color: #a8a9b3;
-    padding: 24px 0;
-}
-.foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-.footer img {
-    filter: invert(1);
-}
-.foot-nav {
-    display: flex; 
-    gap: 32px; 
-    font-size: 13px; 
-}
-.foot-nav a:hover {
-    color: #fff; 
-    opacity: 1;
 }
 
 /* ===== Móvil ===== */
